@@ -12,6 +12,6 @@ class Teacher(models.Model):
     office_hours = models.IntegerField()
     biography = models.TextField()
     course_taught = models.CharField(max_length = 20)
-    class_size = models.PositiveSmallIntegerField()
+    class_size = models.PositiveSmallIntegerField(10)
     def __str__(self):
         return f"{self.first_name}  {self.last_name}"
